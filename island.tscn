@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgs2khdyis7gy"]
+
+[ext_resource type="Script" path="res://island.gd" id="1_a1l04"]
+[ext_resource type="TileSet" uid="uid://cq63hy46rbuvx" path="res://ground.tres" id="1_p1h2k"]
+
+[node name="Island" type="Node2D"]
+script = ExtResource("1_a1l04")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_p1h2k")
+format = 2
+
+[node name="Camera" type="Camera2D" parent="."]
+zoom = Vector2(0.1, 0.1)
